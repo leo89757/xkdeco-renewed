@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="All rights reserved"
+[[mods]]
+modId="xkdeco"
+version="${file.jarVersion}"
+displayName="XK's Deco:Renewed"
+credits="Renewed based on XeKr's original work."
+displayURL="https://space.bilibili.com/5930630"
+authors="XeKr, Tapio"
+description='''
+The mod introduced various decorative elements into Minecraft.
+'''
+[[dependencies.xkdeco]]
+    modId="forge"
+    mandatory=true
+    versionRange="[37,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.xkdeco]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"
