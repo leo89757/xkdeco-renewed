@@ -1,9 +1,9 @@
 package com.teamfractal.xkdeco.common.block;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -11,12 +11,10 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import java.util.Collections;
 import java.util.List;
 
-public class RoofSteepSideBlock extends StairBlock {
-    public RoofSteepSideBlock(){
-        super(() -> new Block(Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 0)
-                        .noOcclusion().isRedstoneConductor((bs, br, bp) -> false)).defaultBlockState(),
-                Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 0).noOcclusion()
-                        .isRedstoneConductor((bs, br, bp) -> false));
+public class GenericSlabBlock extends SlabBlock {
+    public GenericSlabBlock(){
+        super(BlockBehaviour.Properties.of(Material.STONE)
+                .sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 0));
     }
 
     @Override

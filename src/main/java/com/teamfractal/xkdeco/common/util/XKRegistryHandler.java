@@ -1,8 +1,10 @@
 package com.teamfractal.xkdeco.common.util;
 
 import com.teamfractal.xkdeco.XeKrDecoration;
-import com.teamfractal.xkdeco.common.block.init.XKBlocks;
-import com.teamfractal.xkdeco.common.item.init.XKItems;
+import com.teamfractal.xkdeco.common.block.init.XKRoofRelevantBlocks;
+import com.teamfractal.xkdeco.common.block.init.XKWoodSuiteBlocks;
+import com.teamfractal.xkdeco.common.item.init.XKRoofRelevantBlockItems;
+import com.teamfractal.xkdeco.common.item.init.XKWoodSuiteBlockItems;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,8 +20,10 @@ public class XKRegistryHandler {
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        XKItems.register();
-        XKBlocks.register();
+        XKRoofRelevantBlocks.register();
+        XKWoodSuiteBlocks.register();
+        XKRoofRelevantBlockItems.register();
+        XKWoodSuiteBlockItems.register();
 
         Items.register(eventBus);
         Blocks.register(eventBus);
