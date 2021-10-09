@@ -2,6 +2,7 @@ package com.teamfractal.xkdeco.common.creativeTab.init;
 
 import com.teamfractal.xkdeco.common.block.init.basic.XKBasicBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKEasternRoofRelevantBlocks;
+import com.teamfractal.xkdeco.common.block.init.natural.XKNaturalBlocks;
 import com.teamfractal.xkdeco.common.block.init.western.XKWesternRoofRelevantBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -18,13 +19,13 @@ public class XKTabs {
         public ItemStack makeIcon() {
             return null;
         }
-    };
+    };*/
     public static final CreativeModeTab xknature = new CreativeModeTab("xkdeco_nature") {
         @Override
         public ItemStack makeIcon() {
-            return null;
+            return new ItemStack(XKNaturalBlocks.dirtPathSlab.get());
         }
-    };*/
+    };
     public static final CreativeModeTab xkeastern = new CreativeModeTab("xkdeco_eastern") {
         @Override
         public ItemStack makeIcon() {
