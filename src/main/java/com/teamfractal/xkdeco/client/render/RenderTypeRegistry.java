@@ -138,6 +138,7 @@ public class RenderTypeRegistry {
             ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.itemFrameCover.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.glowItemFrameCover.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.smallSignGround.get(), RenderType.cutout());
+            
 
         });
     }
