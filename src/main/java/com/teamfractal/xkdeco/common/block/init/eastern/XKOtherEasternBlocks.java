@@ -54,7 +54,7 @@ public class XKOtherEasternBlocks {
         thresholdWood = XKRegistryHandler.Blocks.register("threshold_wood", WoodFenceGateBlock::new);
         mudWallBlock = XKRegistryHandler.Blocks.register("mud_wall_block", GenericStoneBlock::new);
         mudWallFramed = XKRegistryHandler.Blocks.register("mud_wall_framed", GenericStoneBlock::new);
-        mudWallLine = XKRegistryHandler.Blocks.register("mud_wall_line", GenericStoneBlock::new);
+        mudWallLine = XKRegistryHandler.Blocks.register("mud_wall_line", GenericHexDirectionalBlock::new);
         cyanBricks = XKRegistryHandler.Blocks.register("cyan_bricks", GenericStoneBlock::new);
         cyanBrickSlab = XKRegistryHandler.Blocks.register("cyan_brick_slab", GenericSlabBlock::new);
         cyanBrickStair = XKRegistryHandler.Blocks.register("cyan_brick_stair", GenericStairBlock::new);

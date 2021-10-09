@@ -1,4 +1,4 @@
-package com.teamfractal.xkdeco.common.block.base.colrelevant;
+package com.teamfractal.xkdeco.common.block.base.western;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -26,9 +26,9 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.Collections;
 import java.util.List;
 
-public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
+public class ObeliskHeadBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-    public ColumnBlock(){
+    public ObeliskHeadBlock(){
         super(BlockBehaviour.Properties.of(Material.STONE)
                 .sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 0));
         this.registerDefaultState(this.getStateDefinition().any().setValue(WATERLOGGED, false));
@@ -37,7 +37,7 @@ public class ColumnBlock extends Block implements SimpleWaterloggedBlock {
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         Vec3 offset = state.getOffset(world, pos);
-        return Shapes.or(Block.box(2, 0, 2, 14, 16, 14));
+        return Shapes.or(Block.box(3, 0, 3, 13, 6, 13), Block.box(6, 6, 6, 10, 12, 10));
     }
 
     @Override

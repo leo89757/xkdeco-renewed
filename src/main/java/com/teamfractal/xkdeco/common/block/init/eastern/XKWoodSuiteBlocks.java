@@ -2,7 +2,6 @@ package com.teamfractal.xkdeco.common.block.init.eastern;
 
 import com.teamfractal.xkdeco.common.block.base.WoodStairBlock;
 import com.teamfractal.xkdeco.common.block.base.WoodWallBlock;
-import com.teamfractal.xkdeco.common.block.base.colrelevant.WoodColumnHeadBlock;
 import com.teamfractal.xkdeco.common.block.base.woodensuite.*;
 import com.teamfractal.xkdeco.common.util.XKRegistryHandler;
 import net.minecraft.world.level.block.Block;

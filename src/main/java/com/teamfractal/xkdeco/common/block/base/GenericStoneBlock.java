@@ -14,7 +14,7 @@ import java.util.List;
 public class GenericStoneBlock extends Block {
     public GenericStoneBlock(){
         super(BlockBehaviour.Properties.of(Material.STONE)
-                .sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 0));
+                .sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 0).noOcclusion());
     }
 
     @Override

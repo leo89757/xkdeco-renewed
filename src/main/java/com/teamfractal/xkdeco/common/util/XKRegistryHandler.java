@@ -2,13 +2,17 @@ package com.teamfractal.xkdeco.common.util;
 
 import com.teamfractal.xkdeco.XeKrDecoration;
 import com.teamfractal.xkdeco.common.block.init.basic.XKBasicBlocks;
+import com.teamfractal.xkdeco.common.block.init.eastern.XKEasternRoofRelevantBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
-import com.teamfractal.xkdeco.common.block.init.eastern.XKRoofRelevantBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKWoodSuiteBlocks;
+import com.teamfractal.xkdeco.common.block.init.western.XKGenericWesternBlocks;
+import com.teamfractal.xkdeco.common.block.init.western.XKWesternRoofRelevantBlocks;
 import com.teamfractal.xkdeco.common.item.init.basic.XKBasicBlockItems;
+import com.teamfractal.xkdeco.common.item.init.eastern.XKEasternRoofRelevantBlockItems;
 import com.teamfractal.xkdeco.common.item.init.eastern.XKOtherEasternBlockItems;
-import com.teamfractal.xkdeco.common.item.init.eastern.XKRoofRelevantBlockItems;
 import com.teamfractal.xkdeco.common.item.init.eastern.XKWoodSuiteBlockItems;
+import com.teamfractal.xkdeco.common.item.init.western.XKGenericWesternBlockItems;
+import com.teamfractal.xkdeco.common.item.init.western.XKWesternRoofRelevantBlockItems;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,15 +28,19 @@ public class XKRegistryHandler {
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        XKRoofRelevantBlocks.register();
+        XKEasternRoofRelevantBlocks.register();
         XKWoodSuiteBlocks.register();
         XKOtherEasternBlocks.register();
         XKBasicBlocks.register();
+        XKGenericWesternBlocks.register();
+        XKWesternRoofRelevantBlocks.register();
 
-        XKRoofRelevantBlockItems.register();
+        XKEasternRoofRelevantBlockItems.register();
         XKWoodSuiteBlockItems.register();
         XKOtherEasternBlockItems.register();
         XKBasicBlockItems.register();
+        XKGenericWesternBlockItems.register();
+        XKWesternRoofRelevantBlockItems.register();
 
         Items.register(eventBus);
         Blocks.register(eventBus);

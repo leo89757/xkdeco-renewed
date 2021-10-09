@@ -1,4 +1,4 @@
-package com.teamfractal.xkdeco.common.block.base.colrelevant;
+package com.teamfractal.xkdeco.common.block.base.western.colrelevant;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -9,6 +9,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -25,19 +26,19 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.Collections;
 import java.util.List;
 
-public class ColumnHeadBlock extends Block implements SimpleWaterloggedBlock {
+public class ColumnBaseBlock extends Block implements SimpleWaterloggedBlock {
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-    public ColumnHeadBlock(){
-        super(Properties.of(Material.STONE)
-                .sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 0));
+    public ColumnBaseBlock(){
+        super(BlockBehaviour.Properties.of(Material.STONE)
+                .sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> 0).noOcclusion());
         this.registerDefaultState(this.getStateDefinition().any().setValue(WATERLOGGED, false));
     }
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         Vec3 offset = state.getOffset(world, pos);
-        return Shapes.or(Block.box(2, 0, 2, 14, 14, 14)
-                , Block.box(0, 14, 0, 16, 16, 16));
+        return Shapes.or(Block.box(0, 0, 0, 16, 4, 16)
+                , Block.box(2, 4, 2, 14, 16, 14));
     }
 
     @Override
@@ -58,7 +59,7 @@ public class ColumnHeadBlock extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
-                                  BlockPos facingPos) {
+                                          BlockPos facingPos) {
         if (state.getValue(WATERLOGGED)) {
             world.getLiquidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
         }
@@ -72,4 +73,5 @@ public class ColumnHeadBlock extends Block implements SimpleWaterloggedBlock {
             return dropsOriginal;
         return Collections.singletonList(new ItemStack(this, 1));
     }
+
 }

@@ -27,7 +27,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ItemFrameCover extends Block implements SimpleWaterloggedBlock {
-    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    public static final DirectionProperty FACING = DirectionalBlock.FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
     public ItemFrameCover(int lightLevel){
         super(Block.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 3f).noOcclusion().lightLevel(s -> lightLevel)
@@ -87,8 +87,9 @@ public class ItemFrameCover extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
+        Direction facing = context.getClickedFace();
         boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;;
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
+        return this.defaultBlockState().setValue(FACING, facing).setValue(WATERLOGGED, flag);
     }
 
     @Override

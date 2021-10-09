@@ -1,7 +1,8 @@
 package com.teamfractal.xkdeco.common.creativeTab.init;
 
 import com.teamfractal.xkdeco.common.block.init.basic.XKBasicBlocks;
-import com.teamfractal.xkdeco.common.block.init.eastern.XKRoofRelevantBlocks;
+import com.teamfractal.xkdeco.common.block.init.eastern.XKEasternRoofRelevantBlocks;
+import com.teamfractal.xkdeco.common.block.init.western.XKWesternRoofRelevantBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
@@ -27,7 +28,7 @@ public class XKTabs {
     public static final CreativeModeTab xkeastern = new CreativeModeTab("xkdeco_eastern") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(XKRoofRelevantBlocks.blackRoofRidgeBlock.get());
+            return new ItemStack(XKEasternRoofRelevantBlocks.blackRoofRidgeBlock.get());
         }
     };
     /*public static final CreativeModeTab xkpunk = new CreativeModeTab("xkdeco_punk") {
@@ -39,7 +40,7 @@ public class XKTabs {
     public static final CreativeModeTab xkwestern = new CreativeModeTab("xkdeco_western") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(XKRoofRelevantBlocks.blueRoofRidgeBlock.get());
+            return new ItemStack(XKWesternRoofRelevantBlocks.blueRoofRidgeBlock.get());
         }
     };
 }
