@@ -1,9 +1,11 @@
 package com.teamfractal.xkdeco.common.util;
 
 import com.teamfractal.xkdeco.XeKrDecoration;
+import com.teamfractal.xkdeco.common.block.init.basic.XKBasicBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKRoofRelevantBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKWoodSuiteBlocks;
+import com.teamfractal.xkdeco.common.item.init.basic.XKBasicBlockItems;
 import com.teamfractal.xkdeco.common.item.init.eastern.XKOtherEasternBlockItems;
 import com.teamfractal.xkdeco.common.item.init.eastern.XKRoofRelevantBlockItems;
 import com.teamfractal.xkdeco.common.item.init.eastern.XKWoodSuiteBlockItems;
@@ -25,10 +27,12 @@ public class XKRegistryHandler {
         XKRoofRelevantBlocks.register();
         XKWoodSuiteBlocks.register();
         XKOtherEasternBlocks.register();
+        XKBasicBlocks.register();
 
         XKRoofRelevantBlockItems.register();
         XKWoodSuiteBlockItems.register();
         XKOtherEasternBlockItems.register();
+        XKBasicBlockItems.register();
 
         Items.register(eventBus);
         Blocks.register(eventBus);

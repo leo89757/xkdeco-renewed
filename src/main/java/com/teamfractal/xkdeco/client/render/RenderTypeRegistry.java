@@ -1,5 +1,6 @@
 package com.teamfractal.xkdeco.client.render;
 
+import com.teamfractal.xkdeco.common.block.init.basic.XKBasicBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKRoofRelevantBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -116,6 +117,26 @@ public class RenderTypeRegistry {
             ItemBlockRenderTypes.setRenderLayer(XKOtherEasternBlocks.bonsai.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKOtherEasternBlocks.coralBonsai.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKOtherEasternBlocks.teaWare.get(), RenderType.cutout());
+
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.smallBookStack.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.bigBookStack.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.emptyFishTank.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.fishTank.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.glassTiles.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.glassTileSlab.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.glassTileStair.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.glassDoor.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.glassTrapdoor.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.emptyBottleStack.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.bottleStack.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.woodGlobe.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.globe.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.solarSystemModel.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.solarSystemModelBig.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.telescope.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.itemFrameCover.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.glowItemFrameCover.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.smallSignGround.get(), RenderType.cutout());
 
         });
     }

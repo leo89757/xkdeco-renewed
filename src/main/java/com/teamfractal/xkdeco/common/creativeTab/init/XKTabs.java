@@ -1,17 +1,18 @@
 package com.teamfractal.xkdeco.common.creativeTab.init;
 
+import com.teamfractal.xkdeco.common.block.init.basic.XKBasicBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKRoofRelevantBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 public class XKTabs {
-    /*public static final CreativeModeTab xkbasic = new CreativeModeTab("xkdeco_basic") {
+    public static final CreativeModeTab xkbasic = new CreativeModeTab("xkdeco_basic") {
         @Override
         public ItemStack makeIcon() {
-            return null;
+            return new ItemStack(XKBasicBlocks.fishTank.get());
         }
     };
-    public static final CreativeModeTab xkotherancientcivilizations = new CreativeModeTab("xkdeco_other_ancient_civilizations") {
+    /*public static final CreativeModeTab xkotherancientcivilizations = new CreativeModeTab("xkdeco_other_ancient_civilizations") {
         @Override
         public ItemStack makeIcon() {
             return null;
