@@ -1,0 +1,86 @@
+package com.teamfractal.xkdeco.common.item.init.eastern;
+
+import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
+import com.teamfractal.xkdeco.common.creativeTab.init.XKTabs;
+import com.teamfractal.xkdeco.common.util.XKRegistryHandler;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraftforge.fmllegacy.RegistryObject;
+
+public class XKOtherEasternBlockItems {
+    public static RegistryObject<Item> columnBase;
+    public static RegistryObject<Item> wallBase;
+    public static RegistryObject<Item> columnBaseLight;
+    public static RegistryObject<Item> wallBaseLight;
+    public static RegistryObject<Item> thresholdStone;
+    public static RegistryObject<Item> thresholdWood;
+    public static RegistryObject<Item> mudWallBlock;
+    public static RegistryObject<Item> mudWallFramed;
+    public static RegistryObject<Item> mudWallLine;
+    public static RegistryObject<Item> cyanBricks;
+    public static RegistryObject<Item> cyanBrickSlab;
+    public static RegistryObject<Item> cyanBrickStair;
+    public static RegistryObject<Item> cyanWall;
+    public static RegistryObject<Item> mudWallSlab;
+    public static RegistryObject<Item> mudWallStair;
+    public static RegistryObject<Item> mudWallWall;
+    public static RegistryObject<Item> mudWallLineStair;
+    public static RegistryObject<Item> mudWallCrossStair;
+    public static RegistryObject<Item> whitePorcelain;
+    public static RegistryObject<Item> whitePorcelainTall;
+    public static RegistryObject<Item> whitePorcelainSmall;
+    public static RegistryObject<Item> bluewhitePorcelain;
+    public static RegistryObject<Item> bluewhitePorcelainTall;
+    public static RegistryObject<Item> bluewhitePorcelainSmall;
+    public static RegistryObject<Item> celadonPorcelain;
+    public static RegistryObject<Item> celadonPorcelainTall;
+    public static RegistryObject<Item> celadonPorcelainSmall;
+    public static RegistryObject<Item> fishBowl;
+    public static RegistryObject<Item> darkFishBowl;
+    public static RegistryObject<Item> bonsai;
+    public static RegistryObject<Item> coralBonsai;
+    public static RegistryObject<Item> teaWare;
+    public static RegistryObject<Item> goBoard;
+    public static RegistryObject<Item> paperLantern;
+    public static RegistryObject<Item> redLantern;
+    public static RegistryObject<Item> oilLamp;
+
+    public static void register(){
+        columnBase = XKRegistryHandler.Items.register("column_base", () -> new BlockItem(XKOtherEasternBlocks.columnBase.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        wallBase = XKRegistryHandler.Items.register("wall_base", () -> new BlockItem(XKOtherEasternBlocks.wallBase.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        columnBaseLight = XKRegistryHandler.Items.register("column_base_light", () -> new BlockItem(XKOtherEasternBlocks.columnBaseLight.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        wallBaseLight = XKRegistryHandler.Items.register("wall_base_light", () -> new BlockItem(XKOtherEasternBlocks.wallBaseLight.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        thresholdStone = XKRegistryHandler.Items.register("threshold", () -> new BlockItem(XKOtherEasternBlocks.thresholdStone.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        thresholdWood = XKRegistryHandler.Items.register("threshold_wood", () -> new BlockItem(XKOtherEasternBlocks.thresholdWood.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        mudWallBlock = XKRegistryHandler.Items.register("mud_wall_block", () -> new BlockItem(XKOtherEasternBlocks.mudWallBlock.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        mudWallFramed = XKRegistryHandler.Items.register("mud_wall_framed", () -> new BlockItem(XKOtherEasternBlocks.mudWallFramed.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        mudWallLine = XKRegistryHandler.Items.register("mud_wall_line", () -> new BlockItem(XKOtherEasternBlocks.mudWallLine.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        cyanBricks = XKRegistryHandler.Items.register("cyan_bricks", () -> new BlockItem(XKOtherEasternBlocks.cyanBricks.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        cyanBrickSlab = XKRegistryHandler.Items.register("cyan_brick_slab", () -> new BlockItem(XKOtherEasternBlocks.cyanBrickSlab.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        cyanBrickStair = XKRegistryHandler.Items.register("cyan_brick_stair", () -> new BlockItem(XKOtherEasternBlocks.cyanBrickStair.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        cyanWall = XKRegistryHandler.Items.register("cyan_wall", () -> new BlockItem(XKOtherEasternBlocks.cyanWall.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        mudWallSlab = XKRegistryHandler.Items.register("mud_wall_slab", () -> new BlockItem(XKOtherEasternBlocks.mudWallSlab.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        mudWallStair = XKRegistryHandler.Items.register("mud_wall_stair", () -> new BlockItem(XKOtherEasternBlocks.mudWallStair.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        mudWallWall = XKRegistryHandler.Items.register("mud_wall_wall", () -> new BlockItem(XKOtherEasternBlocks.mudWallWall.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        mudWallLineStair = XKRegistryHandler.Items.register("mud_wall_line_stair", () -> new BlockItem(XKOtherEasternBlocks.mudWallLineStair.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        mudWallCrossStair = XKRegistryHandler.Items.register("mud_wall_cross_stair", () -> new BlockItem(XKOtherEasternBlocks.mudWallCrossStair.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        whitePorcelain = XKRegistryHandler.Items.register("white_porcelain", () -> new BlockItem(XKOtherEasternBlocks.whitePorcelain.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        whitePorcelainTall = XKRegistryHandler.Items.register("white_porcelain_tall", () -> new BlockItem(XKOtherEasternBlocks.whitePorcelainTall.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        whitePorcelainSmall = XKRegistryHandler.Items.register("white_porcelain_small", () -> new BlockItem(XKOtherEasternBlocks.whitePorcelainSmall.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        bluewhitePorcelain = XKRegistryHandler.Items.register("bluewhite_porcelain", () -> new BlockItem(XKOtherEasternBlocks.bluewhitePorcelain.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        bluewhitePorcelainTall = XKRegistryHandler.Items.register("bluewhite_porcelain_tall", () -> new BlockItem(XKOtherEasternBlocks.bluewhitePorcelainTall.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        bluewhitePorcelainSmall = XKRegistryHandler.Items.register("bluewhite_porcelain_small", () -> new BlockItem(XKOtherEasternBlocks.bluewhitePorcelainSmall.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        celadonPorcelain = XKRegistryHandler.Items.register("celadon_porcelain", () -> new BlockItem(XKOtherEasternBlocks.celadonPorcelain.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        celadonPorcelainTall = XKRegistryHandler.Items.register("celadon_porcelain_tall", () -> new BlockItem(XKOtherEasternBlocks.celadonPorcelainTall.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        celadonPorcelainSmall = XKRegistryHandler.Items.register("celadon_porcelain_small", () -> new BlockItem(XKOtherEasternBlocks.celadonPorcelainSmall.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        fishBowl = XKRegistryHandler.Items.register("fish_bowl", () -> new BlockItem(XKOtherEasternBlocks.fishBowl.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        darkFishBowl = XKRegistryHandler.Items.register("dark_fish_bowl", () -> new BlockItem(XKOtherEasternBlocks.darkFishBowl.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        bonsai = XKRegistryHandler.Items.register("bonsai", () -> new BlockItem(XKOtherEasternBlocks.bonsai.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        coralBonsai = XKRegistryHandler.Items.register("coral_bonsai", () -> new BlockItem(XKOtherEasternBlocks.coralBonsai.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        teaWare = XKRegistryHandler.Items.register("tea_ware", () -> new BlockItem(XKOtherEasternBlocks.teaWare.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        goBoard = XKRegistryHandler.Items.register("go_board", () -> new BlockItem(XKOtherEasternBlocks.goBoard.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        paperLantern = XKRegistryHandler.Items.register("paper_lantern", () -> new BlockItem(XKOtherEasternBlocks.paperLantern.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        redLantern = XKRegistryHandler.Items.register("red_lantern", () -> new BlockItem(XKOtherEasternBlocks.redLantern.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+        oilLamp = XKRegistryHandler.Items.register("oil_lamp", () -> new BlockItem(XKOtherEasternBlocks.oilLamp.get(),new Item.Properties().tab(XKTabs.xkeastern)));
+    }
+}

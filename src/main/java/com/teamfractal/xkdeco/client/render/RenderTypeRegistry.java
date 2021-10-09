@@ -1,6 +1,7 @@
 package com.teamfractal.xkdeco.client.render;
 
-import com.teamfractal.xkdeco.common.block.init.XKRoofRelevantBlocks;
+import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
+import com.teamfractal.xkdeco.common.block.init.eastern.XKRoofRelevantBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -109,6 +110,13 @@ public class RenderTypeRegistry {
             ItemBlockRenderTypes.setRenderLayer(XKRoofRelevantBlocks.blueTilesBlock.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKRoofRelevantBlocks.blueTileSlabBlock.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKRoofRelevantBlocks.blueTileStairBlock.get(), RenderType.cutout());
+
+            ItemBlockRenderTypes.setRenderLayer(XKOtherEasternBlocks.fishBowl.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKOtherEasternBlocks.darkFishBowl.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKOtherEasternBlocks.bonsai.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKOtherEasternBlocks.coralBonsai.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKOtherEasternBlocks.teaWare.get(), RenderType.cutout());
+
         });
     }
 }

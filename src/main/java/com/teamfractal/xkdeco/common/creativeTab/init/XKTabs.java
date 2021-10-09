@@ -1,6 +1,6 @@
 package com.teamfractal.xkdeco.common.creativeTab.init;
 
-import com.teamfractal.xkdeco.common.block.init.XKRoofRelevantBlocks;
+import com.teamfractal.xkdeco.common.block.init.eastern.XKRoofRelevantBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 

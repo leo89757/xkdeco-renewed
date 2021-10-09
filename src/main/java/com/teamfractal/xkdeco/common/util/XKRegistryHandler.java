@@ -1,10 +1,12 @@
 package com.teamfractal.xkdeco.common.util;
 
 import com.teamfractal.xkdeco.XeKrDecoration;
-import com.teamfractal.xkdeco.common.block.init.XKRoofRelevantBlocks;
-import com.teamfractal.xkdeco.common.block.init.XKWoodSuiteBlocks;
-import com.teamfractal.xkdeco.common.item.init.XKRoofRelevantBlockItems;
-import com.teamfractal.xkdeco.common.item.init.XKWoodSuiteBlockItems;
+import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
+import com.teamfractal.xkdeco.common.block.init.eastern.XKRoofRelevantBlocks;
+import com.teamfractal.xkdeco.common.block.init.eastern.XKWoodSuiteBlocks;
+import com.teamfractal.xkdeco.common.item.init.eastern.XKOtherEasternBlockItems;
+import com.teamfractal.xkdeco.common.item.init.eastern.XKRoofRelevantBlockItems;
+import com.teamfractal.xkdeco.common.item.init.eastern.XKWoodSuiteBlockItems;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,8 +24,11 @@ public class XKRegistryHandler {
 
         XKRoofRelevantBlocks.register();
         XKWoodSuiteBlocks.register();
+        XKOtherEasternBlocks.register();
+
         XKRoofRelevantBlockItems.register();
         XKWoodSuiteBlockItems.register();
+        XKOtherEasternBlockItems.register();
 
         Items.register(eventBus);
         Blocks.register(eventBus);
