@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "xkdeco:cyan_wall",
+    "xkdeco:mud_wall_wall",
+    "xkdeco:quartz_wall",
+    "xkdeco:ebony_column_hollow_wall",
+    "xkdeco:ebony_column_mud_wall",
+    "xkdeco:ebony_column_wood_wall",
+    "xkdeco:ebony_wall",
+    "xkdeco:mahogany_column_hollow_wall",
+    "xkdeco:mahogany_column_mud_wall",
+    "xkdeco:mahogany_column_wood_wall",
+    "xkdeco:mahogany_wall"
+  ]
+}
