@@ -13,7 +13,7 @@ import net.minecraftforge.fmllegacy.RegistryObject;
 public class XKNaturalBlocks {
     public static RegistryObject<Block> dirtslab;
     public static RegistryObject<Block> dirtPathSlab;
-    //public static RegistryObject<Block> grassBlockSlab;
+    public static RegistryObject<Block> grassBlockSlab;
     public static RegistryObject<Block> myceliumSlab;
     public static RegistryObject<Block> podzolSlab;
     public static RegistryObject<Block> netherrackSlab;
@@ -63,7 +63,7 @@ public class XKNaturalBlocks {
     public static void register(){
         dirtslab = XKRegistryHandler.Blocks.register("dirtslab", () -> new MultiSoundSlabBlock(Material.DIRT, SoundType.GRAVEL));
         dirtPathSlab = XKRegistryHandler.Blocks.register("dirt_path_slab", () -> new MultiSoundSlabBlock(Material.DIRT, SoundType.GRAVEL));
-        //grassBlockSlab = XKRegistryHandler.Blocks.register("grass_block_slab", () -> new MultiSoundSlabBlock(Material.DIRT, SoundType.GRAVEL));
+        grassBlockSlab = XKRegistryHandler.Blocks.register("grass_block_slab", () -> new MultiSoundSlabBlock(Material.DIRT, SoundType.GRAVEL));
         myceliumSlab = XKRegistryHandler.Blocks.register("mycelium_slab", () -> new MultiSoundSlabBlock(Material.DIRT, SoundType.GRAVEL));
         podzolSlab = XKRegistryHandler.Blocks.register("podzol_slab", () -> new MultiSoundSlabBlock(Material.DIRT, SoundType.GRAVEL));
         netherrackSlab = XKRegistryHandler.Blocks.register("netherrack_slab", () -> new MultiSoundSlabBlock(Material.DIRT, SoundType.NETHERRACK));

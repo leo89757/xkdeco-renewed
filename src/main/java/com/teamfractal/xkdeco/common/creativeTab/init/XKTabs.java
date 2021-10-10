@@ -23,7 +23,7 @@ public class XKTabs {
     public static final CreativeModeTab xknature = new CreativeModeTab("xkdeco_nature") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(XKNaturalBlocks.dirtPathSlab.get());
+            return new ItemStack(XKNaturalBlocks.grassBlockSlab.get());
         }
     };
     public static final CreativeModeTab xkeastern = new CreativeModeTab("xkdeco_eastern") {

@@ -3,6 +3,7 @@ package com.teamfractal.xkdeco.client.render;
 import com.teamfractal.xkdeco.common.block.init.basic.XKBasicBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKEasternRoofRelevantBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
+import com.teamfractal.xkdeco.common.block.init.natural.XKNaturalBlocks;
 import com.teamfractal.xkdeco.common.block.init.western.XKWesternRoofRelevantBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -138,7 +139,8 @@ public class RenderTypeRegistry {
             ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.itemFrameCover.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.glowItemFrameCover.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.smallSignGround.get(), RenderType.cutout());
-            
+            ItemBlockRenderTypes.setRenderLayer(XKNaturalBlocks.grassBlockSlab.get(), RenderType.cutout());
+
 
         });
     }

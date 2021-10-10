@@ -10,7 +10,7 @@ import net.minecraftforge.fmllegacy.RegistryObject;
 public class XKNaturalBlockItems {
     public static RegistryObject<Item> dirtslab;
     public static RegistryObject<Item> dirtPathSlab;
-    //public static RegistryObject<Item> grassBlockSlab;
+    public static RegistryObject<Item> grassBlockSlab;
     public static RegistryObject<Item> myceliumSlab;
     public static RegistryObject<Item> podzolSlab;
     public static RegistryObject<Item> netherrackSlab;
@@ -60,7 +60,7 @@ public class XKNaturalBlockItems {
     public static void register(){
         dirtslab = XKRegistryHandler.Items.register("dirtslab", () -> new BlockItem(XKNaturalBlocks.dirtslab.get(),new Item.Properties().tab(XKTabs.xknature)));
         dirtPathSlab = XKRegistryHandler.Items.register("dirt_path_slab",() -> new BlockItem(XKNaturalBlocks.dirtPathSlab.get(),new Item.Properties().tab(XKTabs.xknature)));
-        //grassBlockSlab = XKRegistryHandler.Items.register("grass_block_slab", () -> new BlockItem(XKNaturalBlocks.grassBlockSlab.get(),new Item.Properties().tab(XKTabs.xknature)));
+        grassBlockSlab = XKRegistryHandler.Items.register("grass_block_slab", () -> new BlockItem(XKNaturalBlocks.grassBlockSlab.get(),new Item.Properties().tab(XKTabs.xknature)));
         myceliumSlab = XKRegistryHandler.Items.register("mycelium_slab", () -> new BlockItem(XKNaturalBlocks.myceliumSlab.get(),new Item.Properties().tab(XKTabs.xknature)));
         podzolSlab = XKRegistryHandler.Items.register("podzol_slab", () -> new BlockItem(XKNaturalBlocks.podzolSlab.get(),new Item.Properties().tab(XKTabs.xknature)));
         netherrackSlab = XKRegistryHandler.Items.register("netherrack_slab", () -> new BlockItem(XKNaturalBlocks.netherrackSlab.get(),new Item.Properties().tab(XKTabs.xknature)));
