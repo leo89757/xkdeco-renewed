@@ -6,6 +6,7 @@ import com.teamfractal.xkdeco.common.block.init.eastern.XKEasternRoofRelevantBlo
 import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKWoodSuiteBlocks;
 import com.teamfractal.xkdeco.common.block.init.natural.XKNaturalBlocks;
+import com.teamfractal.xkdeco.common.block.init.otherancientcivilizations.XKOtherAncientCivilizationsBlocks;
 import com.teamfractal.xkdeco.common.block.init.western.XKGenericWesternBlocks;
 import com.teamfractal.xkdeco.common.block.init.western.XKWesternRoofRelevantBlocks;
 import com.teamfractal.xkdeco.common.item.init.basic.XKBasicBlockItems;
@@ -13,6 +14,7 @@ import com.teamfractal.xkdeco.common.item.init.eastern.XKEasternRoofRelevantBloc
 import com.teamfractal.xkdeco.common.item.init.eastern.XKOtherEasternBlockItems;
 import com.teamfractal.xkdeco.common.item.init.eastern.XKWoodSuiteBlockItems;
 import com.teamfractal.xkdeco.common.item.init.natural.XKNaturalBlockItems;
+import com.teamfractal.xkdeco.common.item.init.otherancientcivilizations.XKOtherAncientCivilizationsBlockItems;
 import com.teamfractal.xkdeco.common.item.init.western.XKGenericWesternBlockItems;
 import com.teamfractal.xkdeco.common.item.init.western.XKWesternRoofRelevantBlockItems;
 import net.minecraft.world.item.Item;
@@ -37,6 +39,7 @@ public class XKRegistryHandler {
         XKGenericWesternBlocks.register();
         XKWesternRoofRelevantBlocks.register();
         XKNaturalBlocks.register();
+        XKOtherAncientCivilizationsBlocks.register();
 
         XKEasternRoofRelevantBlockItems.register();
         XKWoodSuiteBlockItems.register();
@@ -45,6 +48,7 @@ public class XKRegistryHandler {
         XKGenericWesternBlockItems.register();
         XKWesternRoofRelevantBlockItems.register();
         XKNaturalBlockItems.register();
+        XKOtherAncientCivilizationsBlockItems.register();
 
         Items.register(eventBus);
         Blocks.register(eventBus);

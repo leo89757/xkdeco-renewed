@@ -11,6 +11,10 @@
     "xkdeco:mahogany_column_hollow_wall",
     "xkdeco:mahogany_column_mud_wall",
     "xkdeco:mahogany_column_wood_wall",
-    "xkdeco:mahogany_wall"
+    "xkdeco:mahogany_wall",
+    "xkdeco:maya_stonebrick_wall",
+    "xkdeco:maya_brick_wall",
+    "xkdeco:maya_mossy_stonebrick_wall",
+    "xkdeco:maya_mossy_brick_wall"
   ]
 }
