@@ -15,6 +15,7 @@ import com.teamfractal.xkdeco.common.item.init.eastern.XKOtherEasternBlockItems;
 import com.teamfractal.xkdeco.common.item.init.eastern.XKWoodSuiteBlockItems;
 import com.teamfractal.xkdeco.common.item.init.natural.XKNaturalBlockItems;
 import com.teamfractal.xkdeco.common.item.init.otherancientcivilizations.XKOtherAncientCivilizationsBlockItems;
+import com.teamfractal.xkdeco.common.item.init.punk.XKPunkItems;
 import com.teamfractal.xkdeco.common.item.init.western.XKGenericWesternBlockItems;
 import com.teamfractal.xkdeco.common.item.init.western.XKWesternRoofRelevantBlockItems;
 import net.minecraft.world.item.Item;
@@ -49,6 +50,7 @@ public class XKRegistryHandler {
         XKWesternRoofRelevantBlockItems.register();
         XKNaturalBlockItems.register();
         XKOtherAncientCivilizationsBlockItems.register();
+        XKPunkItems.register();
 
         Items.register(eventBus);
         Blocks.register(eventBus);

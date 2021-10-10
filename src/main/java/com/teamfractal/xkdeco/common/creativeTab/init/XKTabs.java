@@ -5,6 +5,7 @@ import com.teamfractal.xkdeco.common.block.init.eastern.XKEasternRoofRelevantBlo
 import com.teamfractal.xkdeco.common.block.init.natural.XKNaturalBlocks;
 import com.teamfractal.xkdeco.common.block.init.otherancientcivilizations.XKOtherAncientCivilizationsBlocks;
 import com.teamfractal.xkdeco.common.block.init.western.XKGenericWesternBlocks;
+import com.teamfractal.xkdeco.common.item.init.punk.XKPunkItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
@@ -33,12 +34,12 @@ public class XKTabs {
             return new ItemStack(XKEasternRoofRelevantBlocks.blackRoofRidgeBlock.get());
         }
     };
-    /*public static final CreativeModeTab xkpunk = new CreativeModeTab("xkdeco_punk") {
+    public static final CreativeModeTab xkpunk = new CreativeModeTab("xkdeco_punk") {
         @Override
         public ItemStack makeIcon() {
-            return null;
+            return new ItemStack(XKPunkItems.steelIngot.get());
         }
-    };*/
+    };
     public static final CreativeModeTab xkwestern = new CreativeModeTab("xkdeco_western") {
         @Override
         public ItemStack makeIcon() {
