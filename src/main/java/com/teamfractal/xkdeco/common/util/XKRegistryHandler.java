@@ -7,6 +7,7 @@ import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
 import com.teamfractal.xkdeco.common.block.init.eastern.XKWoodSuiteBlocks;
 import com.teamfractal.xkdeco.common.block.init.natural.XKNaturalBlocks;
 import com.teamfractal.xkdeco.common.block.init.otherancientcivilizations.XKOtherAncientCivilizationsBlocks;
+import com.teamfractal.xkdeco.common.block.init.punk.XKPunkBlocks;
 import com.teamfractal.xkdeco.common.block.init.western.XKGenericWesternBlocks;
 import com.teamfractal.xkdeco.common.block.init.western.XKWesternRoofRelevantBlocks;
 import com.teamfractal.xkdeco.common.item.init.basic.XKBasicBlockItems;
@@ -15,6 +16,7 @@ import com.teamfractal.xkdeco.common.item.init.eastern.XKOtherEasternBlockItems;
 import com.teamfractal.xkdeco.common.item.init.eastern.XKWoodSuiteBlockItems;
 import com.teamfractal.xkdeco.common.item.init.natural.XKNaturalBlockItems;
 import com.teamfractal.xkdeco.common.item.init.otherancientcivilizations.XKOtherAncientCivilizationsBlockItems;
+import com.teamfractal.xkdeco.common.item.init.punk.XKPunkBlockItems;
 import com.teamfractal.xkdeco.common.item.init.punk.XKPunkItems;
 import com.teamfractal.xkdeco.common.item.init.western.XKGenericWesternBlockItems;
 import com.teamfractal.xkdeco.common.item.init.western.XKWesternRoofRelevantBlockItems;
@@ -41,6 +43,7 @@ public class XKRegistryHandler {
         XKWesternRoofRelevantBlocks.register();
         XKNaturalBlocks.register();
         XKOtherAncientCivilizationsBlocks.register();
+        XKPunkBlocks.register();
 
         XKEasternRoofRelevantBlockItems.register();
         XKWoodSuiteBlockItems.register();
@@ -51,6 +54,7 @@ public class XKRegistryHandler {
         XKNaturalBlockItems.register();
         XKOtherAncientCivilizationsBlockItems.register();
         XKPunkItems.register();
+        XKPunkBlockItems.register();
 
         Items.register(eventBus);
         Blocks.register(eventBus);

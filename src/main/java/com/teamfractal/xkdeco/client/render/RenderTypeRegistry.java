@@ -5,6 +5,7 @@ import com.teamfractal.xkdeco.common.block.init.eastern.XKEasternRoofRelevantBlo
 import com.teamfractal.xkdeco.common.block.init.eastern.XKOtherEasternBlocks;
 import com.teamfractal.xkdeco.common.block.init.natural.XKNaturalBlocks;
 import com.teamfractal.xkdeco.common.block.init.otherancientcivilizations.XKOtherAncientCivilizationsBlocks;
+import com.teamfractal.xkdeco.common.block.init.punk.XKPunkBlocks;
 import com.teamfractal.xkdeco.common.block.init.western.XKWesternRoofRelevantBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -142,6 +143,49 @@ public class RenderTypeRegistry {
             ItemBlockRenderTypes.setRenderLayer(XKBasicBlocks.smallSignGround.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKNaturalBlocks.grassBlockSlab.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(XKOtherAncientCivilizationsBlocks.mayaCrystalSkull.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.hollowSteelBar.get(), RenderType.cutoutMipped());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.hollowSteelHalfBeam.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.hollowSteelObliqueBeam.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.hollowSteelTrapdoor.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.hollowSteelBeam.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.hollowSteelFrame.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.hollowSteelObliqueBeamGentle.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.hollowSteelObliqueBeamSteep.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.steelVentiduct.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.ventiductObliqueSecond.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.ventiductOblique.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.ventiductCover.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.ventiductSixway.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.ventiductDown.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.ventiductUp.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.ventiductCorner.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.factoryVentFan.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.factoryVentFanBig.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.factoryTrapdoor.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.factoryTrapdoorRusting.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.factoryTrapdoorRusted.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.fanBlade.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.steelWindmill.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.ironWindmill.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.woodenWindmill.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenOff.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenOn.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenCube.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenDiagram.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenDna.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenList.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenMessage.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenThreebodies.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.screenTransport.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.mechanicalConsole.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.mechanicalScreen.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.mechanicalChair.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.techConsole.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.techScreen.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(XKPunkBlocks.techChair.get(), RenderType.cutout());
+
+
 
 
         });
