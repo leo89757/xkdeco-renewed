@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "xkdeco:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "xkdeco:steel_armor_boots"
+  }
+}
